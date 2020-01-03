@@ -2,9 +2,14 @@ import React from 'react';
 import axios from 'axios';
 
 import Link from 'next/link';
+import Head from 'next/head';
 
 const Projetos = ({ projetos }) => (
   <div>
+    <Head>
+      <title>Projetos</title>
+    </Head>
+    <h1>Projetos</h1>
     <ul>
       {projetos.map(projeto => (
         <li key={projeto.id}>{projeto.name}</li>
