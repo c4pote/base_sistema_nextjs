@@ -4,6 +4,8 @@ import axios from 'axios';
 import Link from 'next/link';
 import Head from 'next/head';
 
+import withAnalyics from '../src/hocs/withAnalytics';
+
 const Projetos = ({ projetos }) => (
   <div>
     <Head>
@@ -23,9 +25,11 @@ const Projetos = ({ projetos }) => (
 
 Projetos.getInitialProps = async () => {
   const response = await axios.get(
-    'https://api.github.com/users/c4pote/repos'
-  );
+  'https://api.github.com/users/c4pote/repos'
+);
+
+  
   return { projetos: response.data };
 }
 
-export default Projetos;
+export default withAnalyics()(Projetos);
