@@ -16,6 +16,10 @@ const Home = () => (
     <Link href="/projetos">
       <a>Projetos</a>
     </Link>
+    <br />
+    <Link href="/perfil">
+      <a>Perfil</a>
+    </Link>
   </div>
 );
 
