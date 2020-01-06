@@ -10,6 +10,13 @@ const Home = () => (
   <div>
     <Head>
       <title>Home</title>
+      <link rel="manifest" href="/manifest.json" />
+      <meta name="theme-color" content="#72B340" />
+      <meta
+        name="description"
+        content="make your Next.js application work offline using service workers via Google's workbox"
+      />
+
     </Head>
     <img src="/static/heroes-4.png" width="200" />
     <h1>Links</h1>
