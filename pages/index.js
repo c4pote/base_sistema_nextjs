@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Head from 'next/head';
 // import { Container } from './styles';
 
-import withAnalyics from '../src/hocs/withAnalytics';
+import withAnalyics from '~/hocs/withAnalytics';
 
 const Title = styled.h1`
   color: #cfb62d;

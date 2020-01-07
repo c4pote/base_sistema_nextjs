@@ -20,5 +20,8 @@
     "dev": "node server.js",
     "start": "yarn clean && yarn build && NODE_ENV=production node server.js",
     "build": "next build"
+  },
+  "devDependencies": {
+    "babel-plugin-root-import": "^6.4.1"
   }
 }
