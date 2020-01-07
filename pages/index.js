@@ -1,10 +1,15 @@
 import React from 'react';
-
+import styled from 'styled-components';
 import Link from 'next/link';
 import Head from 'next/head';
 // import { Container } from './styles';
 
 import withAnalyics from '../src/hocs/withAnalytics';
+
+const Title = styled.h1`
+  color: #cfb62d;
+  font-size:40px;
+  `;
 
 const Home = () => (
   <div>
@@ -19,7 +24,7 @@ const Home = () => (
 
     </Head>
     <img src="/static/heroes-4.png" width="200" />
-    <h1>Links</h1>
+    <Title>Links</Title>
     <Link href="/projetos">
       <a>Projetos</a>
     </Link>
